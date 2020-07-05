@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.kemitix.aws</groupId>
+    <artifactId>kemitix-aws-java-sdk-s3-wrapper</artifactId>
+    <version>1.11.816</version><!-- must match ${aws-java-sdk-s2.version} -->
+
+    <description>
+        Wrapper for the AWS Java SDK for S3 - only releases when there
+        is a change that effects the S3 portion of the AWS Java SDK.
+    </description>
+
+    <properties>
+        <aws-java-sdk-s3.version>1.11.816</aws-java-sdk-s3.version>
+        <jackson-databind.version>2.11.0</jackson-databind.version>
+        <jackson-dataformat-cbor.version>2.11.1</jackson-dataformat-cbor.version>
+        <commons-logging.version>1.2</commons-logging.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-s3</artifactId>
+            <version>${aws-java-sdk-s3.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-databind</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.dataformat</groupId>
+                    <artifactId>jackson-dataformat-cbor</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>commons-logging</artifactId>
+                    <groupId>commons-logging</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-cbor</artifactId>
+            <version>${jackson-dataformat-cbor.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
+            <version>${commons-logging.version}</version>
+        </dependency>
+    </dependencies>
+</project>
