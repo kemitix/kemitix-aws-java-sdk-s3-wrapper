@@ -1,6 +1,18 @@
 # kemitix-aws-java-sdk-s3-wrapper
 Wrapper for the AWS Java SDK for S3 - only releases when there is a change that effects the S3 portion of the AWS Java SDK
 
+![GitHub release (latest by date)](
+https://img.shields.io/github/v/release/kemitix/kemitix-aws-java-sdk-s3-wrapper?style=for-the-badge)
+![GitHub Release Date](
+https://img.shields.io/github/release-date/kemitix/kemitix-aws-java-sdk-s3-wrapper?style=for-the-badge)
+
+[![Nexus](
+https://img.shields.io/nexus/r/https/oss.sonatype.org/net.kemitix.aws/kemitix-aws-java-sdk-s3-wrapper.svg?style=for-the-badge)](
+https://oss.sonatype.org/content/repositories/releases/net/kemitix/aws/kemitix-aws-java-sdk-s3-wrapper/)
+[![Maven-Central](
+https://img.shields.io/maven-central/v/net.kemitix.aws/kemitix-aws-java-sdk-s3-wrapper.svg?style=for-the-badge)](
+https://search.maven.org/search?q=g:net.kemitix.aws%20a:kemitix-aws-java-sdk-s3-wrapper)
+
 ## Objectives
 
 * avoid upgrade noise from automatic upgrades when S3 portion of SDK doesn't change
@@ -49,3 +61,7 @@ makes a change that effects the S3 portion of the SDK, or when an overridden
 transient dependency is release, e.g. Jackson. When a transient dependency 
 release is incorporated, the AWS Java SDK version will also be updated, even 
 if there is no changes to the S3 component.
+
+## Dependencies
+
+![reactor graph](docs/images/reactor-graph.png)
