@@ -21,7 +21,7 @@
     </description>
 
     <properties>
-        <aws-java-sdk-s3.version>1.11.881</aws-java-sdk-s3.version>
+        <aws-java-sdk-s3.version>1.11.891</aws-java-sdk-s3.version>
         <jackson-databind.version>2.11.3</jackson-databind.version>
         <jackson-dataformat-cbor.version>2.11.3</jackson-dataformat-cbor.version>
         <commons-logging.version>1.2</commons-logging.version>
