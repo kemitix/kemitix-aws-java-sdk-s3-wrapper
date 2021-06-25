@@ -21,7 +21,7 @@
     </description>
 
     <properties>
-        <aws-java-sdk-s3.version>1.12.9</aws-java-sdk-s3.version>
+        <aws-java-sdk-s3.version>1.12.12</aws-java-sdk-s3.version>
         <jackson.version>2.12.3</jackson.version>
         <commons-logging.version>1.2</commons-logging.version>
         <commons-codec.version>1.15</commons-codec.version>
