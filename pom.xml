@@ -13,7 +13,7 @@
 
     <groupId>net.kemitix.aws</groupId>
     <artifactId>kemitix-aws-java-sdk-s3-wrapper</artifactId>
-    <version>1.12.56</version><!-- must match ${aws-java-sdk-s3.version} -->
+    <version>1.12.57</version><!-- must match ${aws-java-sdk-s3.version} -->
 
     <description>
         Wrapper for the AWS Java SDK for S3 - only releases when there
@@ -21,7 +21,7 @@
     </description>
 
     <properties>
-        <aws-java-sdk-s3.version>1.12.56</aws-java-sdk-s3.version>
+        <aws-java-sdk-s3.version>1.12.57</aws-java-sdk-s3.version>
         <jackson.version>2.12.5</jackson.version>
         <commons-logging.version>1.2</commons-logging.version>
         <commons-codec.version>1.15</commons-codec.version>
